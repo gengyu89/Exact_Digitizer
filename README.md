@@ -92,9 +92,9 @@ The sampled dataset will be saved as `./output/gilbert_digitized.dat`.
 
 ![gilbert_manual](./report/gilbert_figure_6a_manual.png)
  -->
-> Digitization is something you may do only if you cannot get the raw data for creating a map!
+> Digitization is something you may do only if you cannot get the raw data!
 
-Trying more examples...
+<!-- Trying more examples... -->
 
 → The OIINK CUS Moho 2017 [Yang et al., 2017]<sup>[1]</sup>:
 
@@ -118,13 +118,13 @@ Trying more examples...
 
 **Appendix**
 
-Method for doing the YUV conversion (`uv_distance.m`):
+*A.* Method for doing the YUV conversion (`uv_distance.m`)
 ```
 | Y'|   |  0.299    0.587    0.114   | | R |
 | U | = | -0.14713 -0.28886  0.436   | | G |
 | V |   |  0.615   -0.51499 -0.10001 | | B |
 ```
-List of parameters and their meanings:
+*B.* List of parameters and their meanings
 ```matlab
 % interp_cbar.m
 cbar_lim = [38, 62];  % limits for interpolating the color scale
