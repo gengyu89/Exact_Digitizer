@@ -26,8 +26,8 @@ main.m
       `-- uv_distance.m
 ```
 ---
-<!-- 
-→ Example input map - depths to the 410 km discontinuity [Gilbert et al., 2003]:
+
+<!-- → Example input map - depths to the 410 km discontinuity [Gilbert et al., 2003]:
 
 ![gilbert_original](./report/gilbert_figure_6a_original.png)
 
@@ -90,8 +90,8 @@ The sampled dataset will be saved as `./output/gilbert_digitized.dat`.
 
 → Remade contour map using user-specified pixel locations:
 
-![gilbert_manual](./report/gilbert_figure_6a_manual.png)
- -->
+![gilbert_manual](./report/gilbert_figure_6a_manual.png) -->
+
 > Digitization is something you may do only if you cannot get the raw data!
 
 <!-- Trying more examples... -->
@@ -100,15 +100,16 @@ The sampled dataset will be saved as `./output/gilbert_digitized.dat`.
 
 ![yang_original](./report/yang_figure_6b_original.bmp)
 
-→ Collecting user-specified pixel locations (the collected data must be saved as `./output/yang_locations.dat`):
+→ Collecting user-specified pixel locations (`set_locations.m`):
 
 ![yang_locations](./input/yang_set_locations.png)
+The collected data must be saved as `./output/yang_locations.dat`.
 
-→ Remade contour map using auto-generated pixel locations:
+→ Remade contour map using auto-generated pixel locations (224 pixels selected, 100 excluded):
 
 ![yang_auto](./report/yang_figure_6b_auto.png)
 
-→ Remade contour map using user-specified pixel locations:
+→ Remade contour map using user-specified pixel locations (231 pixels selected, 1 excluded):
 
 ![yang_manual](./report/yang_figure_6b_manual.png)
 
@@ -118,13 +119,13 @@ The sampled dataset will be saved as `./output/gilbert_digitized.dat`.
 
 **Appendix**
 
-*A.* Method for doing the YUV conversion (`uv_distance.m`)
+A. Method for doing the YUV conversion (`uv_distance.m`):
 ```
 | Y'|   |  0.299    0.587    0.114   | | R |
 | U | = | -0.14713 -0.28886  0.436   | | G |
 | V |   |  0.615   -0.51499 -0.10001 | | B |
 ```
-*B.* List of parameters and their meanings
+B. List of parameters and their meanings:
 ```matlab
 % interp_cbar.m
 cbar_lim = [38, 62];  % limits for interpolating the color scale
