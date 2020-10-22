@@ -114,7 +114,7 @@ The collected data must be saved as `./output/yang_locations.dat`.
 
 ![yang_manual](./report/yang_figure_6b_manual.png)
 
-[1] The dataset is available at [IRIS](https://ds.iris.edu/ds/products/emc-oiink_cus_moho2017/).
+[1] The dataset is available at [IRIS](https://ds.iris.edu/ds/products/emc-oiink_cus_moho2017/). For testing the software, we attempted to acquire it from the PDF file of the paper.
 
 ---
 
