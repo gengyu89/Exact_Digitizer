@@ -27,7 +27,7 @@ main.m
 ```
 ---
 
-<!-- → Example input map - depths to the 410 km discontinuity [Gilbert et al., 2003]:
+→ Example input map - depths to the 410 km discontinuity [Gilbert et al., 2003]:
 
 ![gilbert_original](./report/gilbert_figure_6a_original.png)
 
@@ -84,17 +84,17 @@ The sampled dataset will be saved as `./output/gilbert_digitized.dat`.
 -118.321315  41.561514  402.539683
  ...
 ```
-→ Remade contour map using auto-generated pixel locations:
+→ Remade contour map using auto-generated pixel locations (406 pixels selected, 122 excluded):
 
 ![gilbert_auto](./report/gilbert_figure_6a_auto.png)
 
-→ Remade contour map using user-specified pixel locations:
+→ Remade contour map using user-specified pixel locations (335 pixels selected, 89 excluded):
 
-![gilbert_manual](./report/gilbert_figure_6a_manual.png) -->
+![gilbert_manual](./report/gilbert_figure_6a_manual.png)
 
 > Digitization is something you may do only if you cannot get the raw data!
 
-<!-- Trying more examples... -->
+More examples...
 
 → The OIINK CUS Moho 2017 [Yang et al., 2017]<sup>[1]</sup>:
 
@@ -103,6 +103,7 @@ The sampled dataset will be saved as `./output/gilbert_digitized.dat`.
 → Collecting user-specified pixel locations (`set_locations.m`):
 
 ![yang_locations](./input/yang_set_locations.png)
+
 The collected data must be saved as `./output/yang_locations.dat`.
 
 → Remade contour map using auto-generated pixel locations (224 pixels selected, 100 excluded):
